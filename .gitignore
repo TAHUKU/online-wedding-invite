@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Database & data
+guests.json
+database.js
+*.db
+*.sqlite
+
+# Environment
+.env
+
+# Lock file
+package-lock.json
+
+# Folder yang tidak dipakai
+models/
+routes/
+
+# System files
+.DS_Store
+Thumbs.db
+*.log

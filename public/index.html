@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Undangan Pernikahan & Andi & Sari</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h3>Undangan Pernikahan</h3>
+            <h1>Andi & Sari</h1>
+            <p>Kami mengundang Anda untuk hadir di hari bahagia kami</p>
+            <div class="date-badge">Sabtu, 20 Mei 2026</div>
+            <button class="btn-primary" onclick="openInvitation()">Buka Undangan</button>
+        </div>
+    </section>
+
+    <!-- Main Invitation (hidden initially) -->
+    <main id="invitation" style="display: none;">
+        <!-- Couple Section -->
+        <section class="couple-section">
+            <div class="container">
+                <h2>Calon Pengantin</h2>
+                <div class="couple-grid">
+                    <div class="couple-card">
+                        <div class="couple-avatar">👨‍💼</div>
+                        <h3>Andi Prasetyo, S.Kom</h3>
+                        <p>Putra dari Bapak Budi & Ibu Siti</p>
+                    </div>
+                    <div class="couple-card">
+                        <div class="couple-avatar">👰‍♀️</div>
+                        <h3>Sari Dewi, S.E</h3>
+                        <p>Putri dari Bapak Agus & Ibu Rina</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Section -->
+        <section class="event-section">
+            <div class="container">
+                <h2>Acara Pernikahan</h2>
+                <div class="event-grid">
+                    <div class="event-card">
+                        <h3>Akad Nikah</h3>
+                        <p>🕙 08:00 - 10:00 WIB</p>
+                        <p>📅 Sabtu, 20 Mei 2026</p>
+                        <p>📍 Masjid Agung Al-Falah</p>
+                    </div>
+                    <div class="event-card">
+                        <h3>Resepsi</h3>
+                        <p>🕙 11:00 - 16:00 WIB</p>
+                        <p>📅 Sabtu, 20 Mei 2026</p>
+                        <p>📍 Gedung Permata Hati, Jakarta</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP Form -->
+        <section class="rsvp-section">
+            <div class="container">
+                <h2>Konfirmasi Kehadiran</h2>
+                <form id="rsvpForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nama Lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Nomor WhatsApp">
+                    </div>
+                    <div class="form-group">
+                        <select id="attendance" required>
+                            <option value="">Pilih Kehadiran</option>
+                            <option value="hadir">Hadir</option>
+                            <option value="tidak hadir">Tidak Hadir</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="numberOfGuests" placeholder="Jumlah Tamu" min="1" value="1">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="3" placeholder="Ucapan & Doa untuk Pengantin"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Kirim Konfirmasi</button>
+                </form>
+                <div id="messageBox" class="message-box"></div>
+            </div>
+        </section>
+
+        <!-- Guest Book -->
+        <section class="guestbook-section">
+            <div class="container">
+                <h2>Buku Tamu & Ucapan</h2>
+                <div id="guestList" class="guest-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
